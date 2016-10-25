@@ -8,6 +8,7 @@
       'myApp.config',
       'myApp.components.main',
       'myApp.components.coffee',
+      'myApp.components.user',
       'myApp.services'
     ]);
 
