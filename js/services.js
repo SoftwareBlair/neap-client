@@ -34,7 +34,7 @@
 
   function userService ($http) {
     /*jshint validthis: true */
-    const baseURL = 'http://localhost:8000/user/';
+    const baseURL = 'https://serene-springs-41881.herokuapp.com/user/';
     this.login = function (user) {
       return $http({
         method: 'POST',
