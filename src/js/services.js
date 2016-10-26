@@ -35,11 +35,18 @@
   function userService ($http) {
     /*jshint validthis: true */
     const baseURL = 'http://localhost:8000/user/';
-
     this.login = function (user) {
       return $http({
         method: 'POST',
         url: baseURL + 'login',
+        data: user,
+        headers: {'Content-Type': 'application/json'}
+      });
+    };
+    this.register = function(user) {
+      return $http({
+        method: 'POST',
+        url: baseURL + 'register',
         data: user,
         headers: {'Content-Type': 'application/json'}
       });
